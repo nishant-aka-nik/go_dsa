@@ -1,0 +1,55 @@
+package main
+
+import "fmt"
+
+var brackets string = "{(})"
+
+func main() {
+	var stack []rune
+
+	for _, bracket := range brackets {
+		switch bracket {
+		case '{':
+			stack = append(stack, bracket)
+		case '(':
+			stack = append(stack, bracket)
+		case '[':
+			stack = append(stack, bracket)
+		case '}':
+			lengthOfStack := len(stack)
+			lastBraketInStack := stack[lengthOfStack-1]
+			if lastBraketInStack != '{' {
+				fmt.Println("invalid pair")
+				return
+			}
+
+			//popping
+			stack = stack[:lengthOfStack-1]
+		case ')':
+			lastBraketInStack := stack[len(stack)-1]
+			if lastBraketInStack != '(' {
+				fmt.Println("invalid pair")
+				return
+			}
+
+			//popping
+			stack = stack[:len(stack)-1]
+		case ']':
+			lastBraketInStack := stack[len(stack)-1]
+			if lastBraketInStack != '[' {
+				fmt.Println("invalid pair")
+				return
+			}
+
+			//popping
+			stack = stack[:len(stack)-1]
+		}
+	}
+
+	if len(stack) == 0 {
+		fmt.Println("valid pair")
+	} else {
+		fmt.Println("invalid pair")
+	}
+
+}

@@ -24,6 +24,12 @@ func main() {
 
 	//displaying linkedlist when it is not empty
 	ll.Display_All_LinkedList_Nodes()
+
+	//delete at head
+	ll.Delete_at_head()
+
+	//displaying linkedlist after deleting from head
+	ll.Display_All_LinkedList_Nodes()
 }
 
 func (ll *LinkedList) Insert_Data_At_Head(data int) LinkedList {
@@ -72,7 +78,7 @@ func (ll *LinkedList) Display_All_LinkedList_Nodes() {
 	// 	currentNode = currentNode.NextNode
 	// }
 
-	// // iss loop me bhi same bug hai kyuki m current node ko ni next node ko check krra hu 
+	// // iss loop me bhi same bug hai kyuki m current node ko ni next node ko check krra hu
 	// // to last element jo hai vo print ni hora usse pehle he break ho ja ra hai
 	// for {
 	// 	fmt.Println(currentNode.Data)
@@ -82,8 +88,31 @@ func (ll *LinkedList) Display_All_LinkedList_Nodes() {
 	// 	}
 	// }
 
+	fmt.Println("Start linkedlist printing")
 	for currentNode != nil {
 		fmt.Println(currentNode.Data)
 		currentNode = currentNode.NextNode
 	}
+	fmt.Println("End linkedlist printing")
+}
+
+// There are three basic delete operations for linked lists:
+// Deletion at the head
+// Deletion by value
+// Deletion at the tail
+func (ll *LinkedList) Delete_at_head() {
+	if ll.Head == nil {
+		fmt.Println("linked list is empty")
+		return
+	}
+
+	ll.Head = ll.Head.NextNode
+}
+
+func (ll *LinkedList) Delete_node_by_value(value int) {
+	if ll.Head == nil {
+		fmt.Println("linkedlist is empty")
+	}
+
+	
 }
