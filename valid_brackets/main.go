@@ -3,5 +3,5 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Valid brackets")
+	fmt.Println("Valid brackets using stack")
 }
