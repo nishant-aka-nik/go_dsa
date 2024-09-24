@@ -33,6 +33,7 @@ https://www.educative.io/courses/data-structures-and-algorithms-go
 
 fuckkkk connectwise 
 https://www.educative.io/courses/coderust-hacking-the-coding-interview/container-with-most-water
+https://www.educative.io/module/page/wjB3xQCPAO0E1w1Qj/10370001/5781771081482240/6130392301830144
 
 
 we will start from here after dinner ratt lo 
@@ -52,3 +53,44 @@ https://www.educative.io/courses/grokking-coding-interview-patterns-go/valid-ana
 
 map basics
 https://chatgpt.com/share/66f24fdf-a4bc-8006-b68c-6969669e3a9a
+
+leadsquared dsa round 1
+https://www.educative.io/module/page/wjB3xQCPAO0E1w1Qj/10370001/5771628113559552/5878701648248832
+
+rakuten
+rate limiter question
+https://godoy-lucas-e.medium.com/golang-concurrency-building-a-simple-rate-limiter-token-bucket-algorithm-62de4f389039
+https://www.educative.io/courses/grokking-the-system-design-interview/system-design-the-rate-limiter
+
+api gateway
+versioning https://www.educative.io/courses/grokking-the-api-design-interview/api-versioning#Introduction
+caching https://www.educative.io/courses/grokking-the-api-design-interview/caching-at-different-layers
+authentication and authorisation - https://www.educative.io/courses/grokking-the-api-design-interview/authentication-and-authorization
+extra https://www.educative.io/courses/grokking-the-api-design-interview/api-versioning#Introduction
+
+SOLID priciple and example code
+https://educative.io/courses/grokking-the-low-level-design-interview-using-ood-principles/introduction-to-solid-design-principles
+Design patterns
+https://www.educative.io/courses/grokking-the-low-level-design-interview-using-ood-principles/introduction-to-the-design-patterns
+
+sql question 
+there is a 
+candidate - id 
+          - name
+          - lastname
+task - id
+      - task name
+
+cadidate_task - id
+                candidate id
+                task id 
+                start time
+                end time
+
+give me all the task which are over lapping with eachother along with candidate name and task name
+
+what is memory leaking and how will you debug it in a golang microservice
+https://jvns.ca/blog/2017/09/24/profiling-go-with-pprof/
+https://wablesushmita.medium.com/cpu-memory-profiling-with-golang-pprof-3deddbd7b964
+https://www.infoq.com/articles/debugging-go-programs-pprof-trace/
+https://www.freecodecamp.org/news/how-i-investigated-memory-leaks-in-go-using-pprof-on-a-large-codebase-4bec4325e192/
