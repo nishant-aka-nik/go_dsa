@@ -61,6 +61,7 @@ rakuten
 rate limiter question
 https://godoy-lucas-e.medium.com/golang-concurrency-building-a-simple-rate-limiter-token-bucket-algorithm-62de4f389039
 https://www.educative.io/courses/grokking-the-system-design-interview/system-design-the-rate-limiter
+chat-gpt solution - https://chatgpt.com/share/66f5b0f3-9424-8006-a3b1-546d48efdd9d
 
 api gateway
 versioning https://www.educative.io/courses/grokking-the-api-design-interview/api-versioning#Introduction
@@ -94,3 +95,88 @@ https://jvns.ca/blog/2017/09/24/profiling-go-with-pprof/
 https://wablesushmita.medium.com/cpu-memory-profiling-with-golang-pprof-3deddbd7b964
 https://www.infoq.com/articles/debugging-go-programs-pprof-trace/
 https://www.freecodecamp.org/news/how-i-investigated-memory-leaks-in-go-using-pprof-on-a-large-codebase-4bec4325e192/
+
+sql
+https://www.geeksforgeeks.org/amazon-sql-interview-questions/?ref=asr6
+https://www.geeksforgeeks.org/sql-interview-questions-set-2/?ref=asr10
+https://www.geeksforgeeks.org/spotify-sql-interview-questions/?ref=asr7
+
+sql arithematic and comparison operator
+https://chatgpt.com/share/66f3a515-28a8-8006-9d3a-6ff834cbc6c1
+
+sql leetcode
+https://leetcode.com/problem-list/e97a9e5m/
+https://leetcode.com/studyplan/top-sql-50/      
+https://zqt0.gitbook.io/leetcode/sql/175.combine-two-tables
+
+https://leetcode.com/studyplan/leetcode-75/
+
+stratascratch
+https://www.stratascratch.com/blog/a-detailed-comparison-between-inner-join-vs-outer-joins/
+https://www.stratascratch.com/blog/simplifying-sql-queries-with-aliases-a-how-to-guide/
+https://github.com/ValentynaKucheriava/SQL-Practice-StrataScratch
+https://github.com/wtlow003/stratascratch-daily
+
+----------------------------------------------------------------------------------------------------------------
+stratascratch questionsolution
+https://platform.stratascratch.com/coding/2155-ad-performance-rating?code_type=1
+
+select product_id,sum(quantity) as Total_units, case
+
+when sum(quantity) >= 30 then 'Outstanding'
+when (sum(quantity) >= 20 and sum(quantity) <= 29 ) then 'Satisfactory'
+when (sum(quantity) >= 10 and sum(quantity) <= 19 ) then 'Unsatisfactory'
+else 'Poor'
+end as ad_performance from marketing_campaign group by product_id order by Total_units desc;
+----------------------------------------------------------------------------------------------------------------
+
+
+extra shit
+https://use-the-index-luke.com
+https://singlelogin.re/book/25780279/378aa3/the-5day-job-search-proven-strategies-to-answering-tough-interview-questions-getting-multiple-jo.html?dsource=recommend
+
+---------------------------------------
+Real-time Nutanix interview experience:
+.
+.
+𝟏. 𝐏𝐡𝐨𝐧𝐞 𝐒𝐜𝐫𝐞𝐞𝐧:
+Q1: Write a test case for a critical functionality in your application.
+Example: Login test for critical functionality (input: valid credentials, expected output: successful login).
+Q2: Nth Fibonacci number.
+Input: N = 100
+Solution: Use memoization or space optimization to handle large inputs.
+Output: The 100th Fibonacci number.
+Q3: Find the second largest element in an array.
+Input: [12, 5, 8, 19, 29]
+Output: 19 (second largest).
+
+𝟐. 𝐓𝐞𝐜𝐡𝐧𝐢𝐜𝐚𝐥 𝐑𝐨𝐮𝐧𝐝 𝟏:
+Q1: Check if two strings are anagrams (input strings may contain spaces and a mix of upper and lower cases).
+Input: "Listen", "Silent"
+Output: True (they are anagrams).
+Q2: Find the longest common prefix in a list of strings.
+Input: ["flower", "flow", "flight"]
+Output: "fl"
+Q3: Factorial of a number using recursion.
+Input: 5
+Output: 120 (5! = 5 * 4 * 3 * 2 * 1).
+
+𝟑. 𝐓𝐞𝐜𝐡𝐧𝐢𝐜𝐚𝐥 𝐑𝐨𝐮𝐧𝐝 𝟐:
+Q1: Simple question on a while loop with two variables count and ans.
+int count = 0;
+int ans = 1;
+while(ans <= 2000) {
+count++;
+ans = ans * 7;
+}
+Output: Value of count when the loop exits: 5 (ans = 2401).
+Q2: Calculate the salary of an employee based on a formula, where the employee belongs to different teams (team1, team2, team3).
+
+𝟒. 𝐄𝐱𝐩𝐞𝐜𝐭𝐚𝐭𝐢𝐨𝐧𝐬 𝐨𝐧 𝐃𝐞𝐬𝐢𝐠𝐧 𝐐𝐮𝐞𝐬𝐭𝐢𝐨𝐧𝐬
+The interviewers were focused on SOLID principles:
+S: Single Responsibility
+O: Open-Closed
+L: Liskov Substitution
+I: Interface Segregation
+D: Dependency Inversion
+They were particularly keen on knowing if I follow these principles in framework development, especially Single Responsibility and Open-Closed principles. Lacking knowledge of these terms negatively impacted their evaluation.
