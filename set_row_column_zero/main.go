@@ -1,3 +1,6 @@
+//https://www.educative.io/module/page/wjB3xQCPAO0E1w1Qj/10370001/5771628113559552/5878701648248832
+
+//below is not the educative solution
 package main
 
 import "fmt"
