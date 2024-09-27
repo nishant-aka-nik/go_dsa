@@ -1,15 +1,16 @@
-//https://www.educative.io/courses/data-structures-and-algorithms-go/challenge-balanced-parentheses
+// https://www.educative.io/courses/data-structures-and-algorithms-go/challenge-balanced-parentheses
 package main
 
 import "fmt"
 
 var brackets string = "{(})"
 
-// logic 
+// var brackets string = "[()]{}{[()()]()}"
+
+// logic
 // if open bracket then push to array
 // if close then pop from the array
 // and check if the popped bracket is opening complement of closing bracket
-
 
 func main() {
 	var stack []rune
