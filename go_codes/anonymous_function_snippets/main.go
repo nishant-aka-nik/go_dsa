@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"sync"
+)
 
 func main() {
 	// We can assign an anonymous function to a variable and use the variable to execute the function.
@@ -27,5 +30,32 @@ func main() {
 		anonfunction(v)
 
 	}("mystring", parameter)
+
+	////---------------------------------------------------------------------------------------------------------------------
+	//// this below code will always print 11 we are not passing the value of i in anonymous function
+	// var wg sync.WaitGroup
+	// for i := 1; i <= 10; i++ {
+	// 	wg.Add(1)
+	// 	go func() {
+	// 		fmt.Println(i)
+	// 		wg.Done()
+	// 	}()
+	// }
+	// wg.Wait()
+
+	//----------------------------------------------Fixed code------------------------------------------------------------------
+	// this will print integers from 1 to 10 in random order based on go routine execution
+	// jo pehle aya vo pehle print krra
+	var wg sync.WaitGroup
+
+	for i := 0; i < 10; i++ {
+		wg.Add(1)
+		go func(value int) {
+			fmt.Println(value)
+			wg.Done()
+		}(i)
+	}
+
+	wg.Wait()
 
 }
