@@ -8,6 +8,7 @@ import (
 
 
 // //faulty code as waitgroup is not used in this code to make the main thread wait
+// // it will end without waiting for other go routines to complete
 // func main() {
 // 	var mu sync.Mutex
 // 	dataMap := make(map[int]string)
