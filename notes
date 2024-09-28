@@ -183,3 +183,7 @@ L: Liskov Substitution
 I: Interface Segregation
 D: Dependency Inversion
 They were particularly keen on knowing if I follow these principles in framework development, especially Single Responsibility and Open-Closed principles. Lacking knowledge of these terms negatively impacted their evaluation.
+
+
+https://www.educative.io/courses/go-for-devops
+https://www.educative.io/courses/practical-guide-to-kubernetes
