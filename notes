@@ -187,3 +187,37 @@ They were particularly keen on knowing if I follow these principles in framework
 
 https://www.educative.io/courses/go-for-devops
 https://www.educative.io/courses/practical-guide-to-kubernetes
+
+
+
+5 system design patterns I focused on while preparing for Microsoft…..
+
+1️⃣ Singleton: Ensures a class has one instance with global access, ideal for shared resources like logging or configs.
+
+2️⃣ Factory Method: Provides an interface to create objects, allowing subclasses to decide the object type.
+
+3️⃣ Abstract Factory: Creates families of related objects without specifying their exact class.
+
+4️⃣ Builder: Constructs complex objects step by step, useful for objects with many optional parameters.
+
+5️⃣ Prototype: Clones existing objects, beneficial when cloning is cheaper than creating a new instance.
+
+#Protip: Start with the Singleton and Factory Method, frequently asked about in interviews.
+
+
+💼 SQL Interview Tips for Success! 💡
+
+1️⃣ Master the Basics: Be solid on SQL fundamentals—SELECT, JOIN, WHERE, GROUP BY, and aggregate functions.
+
+2️⃣ Optimize Queries: Know how to write efficient queries using indexing, and be ready to discuss query optimization.
+
+3️⃣ Practice Real Scenarios: Familiarize yourself with real-world scenarios, such as database design and normalization.
+
+4️⃣ Understand Subqueries and CTEs: These can simplify complex queries, so be ready to demonstrate both.
+
+5️⃣ Brush Up on Data Types: Knowing how to handle different data types is key to writing effective queries.
+
+6️⃣ Explain Your Thought Process: Interviewers often value how you approach a problem as much as the correct answer!
+
+api interview
+https://github.com/Devinterview-io/api-design-interview-questions
