@@ -5,6 +5,13 @@ import (
 	"sort"
 )
 
+// solution algorithm
+// find the smallest odd number
+// find the sum
+// if the sum is even return sum
+// if sum is odd - substract the smallest odd from the sum to make it even
+
+
 var coupons = []int{2, 3, 6, -5, 10, 1, 1}
 
 //answer is 22
