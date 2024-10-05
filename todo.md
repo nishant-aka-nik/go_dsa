@@ -36,3 +36,10 @@ https://www.educative.io/courses/grokking-the-principles-and-practices-of-advanc
 ---
 PTA NI KYA KRNA HAI ISKA A Practical Guide to Kubernetes
 https://www.educative.io/courses/practical-guide-to-kubernetes
+
+dalal
+array
+or stack
+grapgh
+recurrsion
+matrix
