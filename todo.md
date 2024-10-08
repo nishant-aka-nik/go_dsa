@@ -43,3 +43,10 @@ or stack
 grapgh
 recurrsion
 matrix
+
+----------------------------------
+questions to attempt
+https://www.educative.io/module/page/wjB3xQCPAO0E1w1Qj/10370001/5781771081482240/6130392301830144
+https://www.educative.io/courses/data-structures-and-algorithms-go/challenge-factorial
+https://www.educative.io/module/page/wjB3xQCPAO0E1w1Qj/10370001/5771628113559552/5929192503640064
+ask chatgpt to give theory for concruency
