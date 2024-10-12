@@ -22,12 +22,14 @@ func main() {
 			return wordRune[i] < wordRune[j]
 		})
 
-		_, ok := groupMap[string(wordRune)]
-		if !ok {
-			groupMap[string(wordRune)] = append(groupMap[string(wordRune)], word)
-		} else {
-			groupMap[string(wordRune)] = append(groupMap[string(wordRune)], word)
-		}
+		groupMap[string(wordRune)] = append(groupMap[string(wordRune)], word)
+
+		// _, ok := groupMap[string(wordRune)]
+		// if !ok {
+		// 	groupMap[string(wordRune)] = append(groupMap[string(wordRune)], word)
+		// } else {
+		// 	groupMap[string(wordRune)] = append(groupMap[string(wordRune)], word)
+		// }
 
 		fmt.Printf("word: %#v\n", word)
 

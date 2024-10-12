@@ -222,3 +222,33 @@ https://www.turing.com/interview-questions/kubernetes#basic-kubernetes-interview
 
 api interview
 https://github.com/Devinterview-io/api-design-interview-questions
+
+
+In-person interview experience at Cashfree Payments for the role of SDE-2. 
+All the rounds were elimination rounds.
+
+1st Round:
+- Telephonic Round
+
+2nd Round: DSA
+ - Array Preprocessing problem
+ - Graph problem - number of delayed flights in the directed graph. You will be given nodes that are delayed. If node A is delayed and node B is dependent on node A, then B will be delayed too. You need to give the list of total delayed nodes.
+
+3rd Round: LLD
+- Design an online parking lot system
+- Handle concurrency when multiple people are booking at the same time
+
+4th Round: Hiring Manager + technical
+- Discuss the previous project with cross-questions
+- Threads and processes in Java
+
+After a week, HR informed me that they were not moving forward with my application
+
+https://prepfortech.io/topic-wise-interview-questions/stack
+https://prepfortech.io/topic-wise-interview-questions/arrays
+https://prepfortech.io/topic-wise-interview-questions/linked-list
+https://prepfortech.io/topic-wise-interview-questions/hash-table
+
+concurrency questions
+code to pring ping ang pong
+how does go runtime handles the go routines
