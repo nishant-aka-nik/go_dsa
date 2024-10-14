@@ -30,6 +30,7 @@ Step 2: Create Concrete Implementations
 
 Implement the interface with one or more concrete types.
 
+```
 package logger
 
 import "fmt"
@@ -82,6 +83,7 @@ func main() {
     appWithFileLogger := NewApp(fileLogger)
     appWithFileLogger.Run()
 }
+```
 
 Benefits of Dependency Injection
 

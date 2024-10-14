@@ -364,3 +364,23 @@ already defined in another type, typically a parent or embedded type.
 This allows the new method to replace or extend the behavior of the existing method.
 
 method overriding is primarily achieved through type embedding and interfaces
+
+---
+what is select 
+---
+The select statement in Go is used to wait on multiple channel operations. 
+It’s similar to a switch statement but specifically for channels. 
+This allows your program to handle multiple channel communications concurrently 
+and decide which one to proceed with based on which channel is ready.
+
+Use select when you have multiple channel operations and you want your goroutine to respond to whichever channel is ready first. It’s especially useful for:
+-	Multiplexing: Handling multiple channel inputs without blocking.
+-	Timeouts: Implementing timeouts using time.After.
+-	Non-blocking Operations: Performing operations without getting stuck waiting for a channel.
+
+---
+What is the Go Scheduler?
+---
+-	Definition: The Go scheduler is a component of Go’s runtime that manages the execution of goroutines. 
+- It multiplexes thousands of goroutines onto a smaller number of OS threads, optimizing resource usage and performance.
+- Purpose: Its primary role is to handle the creation, scheduling, and execution of goroutines, ensuring that they run efficiently without overwhelming the system’s resources.
