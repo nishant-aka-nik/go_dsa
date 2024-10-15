@@ -384,3 +384,60 @@ What is the Go Scheduler?
 -	Definition: The Go scheduler is a component of Go’s runtime that manages the execution of goroutines. 
 - It multiplexes thousands of goroutines onto a smaller number of OS threads, optimizing resource usage and performance.
 - Purpose: Its primary role is to handle the creation, scheduling, and execution of goroutines, ensuring that they run efficiently without overwhelming the system’s resources.
+
+--- 
+what will be the error for this code?
+---
+```
+package main
+
+import (
+	"fmt"
+)
+
+// Speaker is an interface that defines the Speak method
+type Speaker interface {
+	Speak() string
+	Walk() string
+}
+
+// Dog struct
+type Dog struct {
+	Name string
+}
+
+// Speak method for Dog
+func (d Dog) Speak() string {
+	return d.Name + " says Woof!"
+}
+
+// Cat struct
+type Cat struct {
+	Name string
+}
+
+// Speak method for Cat
+func (c Cat) Speak() string {
+	return c.Name + " says Meowvvvvvvvv!"
+}
+
+func (c Cat) Walk() string {
+	return c.Name + " says Meow!"
+}
+
+// makeSpeak function takes a Speaker interface
+func makeSpeak(s Speaker) {
+	fmt.Println(s.Speak())
+}
+
+func main() {
+	dog := Dog{Name: "Rex"}
+	cat := Cat{Name: "Whiskers"}
+
+	makeSpeak(dog)
+	makeSpeak(cat)
+}
+```
+
+compile time error stating - 
+- ./main.go:46:12: cannot use dog (variable of type Dog) as Speaker value in argument to makeSpeak: Dog does not implement Speaker (missing method Walk) (exit status 1)
