@@ -441,3 +441,8 @@ func main() {
 
 compile time error stating - 
 - ./main.go:46:12: cannot use dog (variable of type Dog) as Speaker value in argument to makeSpeak: Dog does not implement Speaker (missing method Walk) (exit status 1)
+
+---
+sort library interface imeplementation chatgpt
+---
+https://chatgpt.com/share/67128199-6760-8004-a898-a289e2c3615d
